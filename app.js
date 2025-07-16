@@ -28,7 +28,7 @@ function clockTicking() {
   const time = new Date();
 
   const [hours, minutes, seconds] = [
-    time.getHours() % 12 || 12, //converts 24 hour format to 12 hour format
+    time.getHours() % 12,
     time.getMinutes(),
     time.getSeconds(),
   ];
@@ -42,5 +42,5 @@ function clockTicking() {
   secondHand.style.transform = `rotate(${secondHandRotation}deg)`;
 }
 
-window.addEventListener("DOMContentLoaded", clockTicking);
+clockTicking();
 setInterval(clockTicking, 1000);
