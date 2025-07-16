@@ -12,7 +12,7 @@ body {
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.2),
-    rgba(1, 1, 1, 0.6)
+    rgba(1, 1, 1, 0.5)
   );
 }
 
@@ -22,9 +22,13 @@ body {
   border-radius: 50%;
   position: relative;
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   left: 50%;
   top: 50vh;
   transform: translate(-50%, -50%);
+  border: 5px solid black;
 }
 
 .numbers {
@@ -39,4 +43,11 @@ body {
 
 #hourHand {
   background-color: red;
+}
+
+#centreCircle {
+  background-color: rgba(48, 48, 48, 0.562);
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
 }
