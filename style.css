@@ -21,7 +21,7 @@ body {
   width: 40rem;
   border-radius: 50%;
   position: relative;
-  z-index: 1;
+  z-index: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,13 +37,13 @@ body {
   transform: translate(-60%, -60%);
   font-size: 2rem;
   margin: 10px;
-  z-index: 2;
+  z-index: 1;
   color: black;
 }
 
 #centreCircle {
   position: relative;
-  z-index: 3;
+  z-index: 5;
   background-color: rgba(0, 0, 0, 0.9);
   height: 2rem;
   width: 2rem;
@@ -52,9 +52,30 @@ body {
 
 #hourHand {
   position: absolute;
+  z-index: 4;
   bottom: 50%;
-  background-color: rgba(0, 0, 0, 0.63);
-  height: 6rem;
-  width: 0.7rem;
-  border-radius: 5px 5px 0 0;
+  background-color: black;
+  height: 8rem;
+  width: 1rem;
+  border-radius: 3px 3px 0 0;
+}
+
+#minuteHand {
+  position: absolute;
+  bottom: 50%;
+  background-color: black;
+  z-index: 3;
+  height: 13rem;
+  width: 0.6rem;
+  border-radius: 3px 3px 0 0;
+}
+
+#secondsHand {
+  position: absolute;
+  bottom: 50%;
+  background-color: black;
+  z-index: 3;
+  height: 15.5rem;
+  width: 0.3rem;
+  border-radius: 3px 3px 0 0;
 }
