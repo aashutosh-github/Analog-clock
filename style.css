@@ -41,13 +41,20 @@ body {
   color: black;
 }
 
-#hourHand {
-  background-color: red;
-}
-
 #centreCircle {
-  background-color: rgba(48, 48, 48, 0.562);
+  position: relative;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.9);
   height: 2rem;
   width: 2rem;
   border-radius: 50%;
+}
+
+#hourHand {
+  position: absolute;
+  bottom: 50%;
+  background-color: rgba(0, 0, 0, 0.63);
+  height: 6rem;
+  width: 0.7rem;
+  border-radius: 5px 5px 0 0;
 }
