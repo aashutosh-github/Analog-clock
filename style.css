@@ -58,6 +58,7 @@ body {
   height: 8rem;
   width: 1rem;
   border-radius: 3px 3px 0 0;
+  transform-origin: bottom;
 }
 
 #minuteHand {
@@ -65,9 +66,10 @@ body {
   bottom: 50%;
   background-color: black;
   z-index: 3;
-  height: 13rem;
+  height: 12.5rem;
   width: 0.6rem;
   border-radius: 3px 3px 0 0;
+  transform-origin: bottom;
 }
 
 #secondsHand {
@@ -75,7 +77,8 @@ body {
   bottom: 50%;
   background-color: black;
   z-index: 3;
-  height: 15.5rem;
+  height: 15rem;
   width: 0.3rem;
   border-radius: 3px 3px 0 0;
+  transform-origin: bottom;
 }
